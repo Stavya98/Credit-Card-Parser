@@ -4,7 +4,7 @@ import os
 import sys
 import argparse
 from textwrap import dedent
-
+# python parser.py "statement.pdf"
 # python demo.py "C:\Users\Stavya\Downloads\hdfc_sample_statement.pdf"
 
 PARSER_CONFIGS = [
@@ -109,7 +109,7 @@ def process_pdf(filepath):
         
         # Print results
         print("\n" + "="*25)
-        print("   Extraction Results")
+        print("   Extraction Results ")
         print("="*25)
         for key in ALL_KEYS:
             value = extracted_data.get(key, 'Not Found')
